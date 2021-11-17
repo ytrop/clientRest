@@ -16,7 +16,7 @@ public class ClienteRestApplication implements CommandLineRunner{
 	
 	public void run (String ...args) throws Exception{
 		
-		Service service = new Service();
+		Service Service = new Service();
 		
 		String open = "open";
 		String close = "close";
@@ -27,7 +27,7 @@ public class ClienteRestApplication implements CommandLineRunner{
 				.nombre("Jose")
 				.apellidos("Portero").build();
 			
-		Service Service = new Service();
+	
 				
 		for(int i=0; i <= 5 && cliente.getStatus().equals(open); i++) {
 			cliente.setStatus(halFopen);
